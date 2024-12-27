@@ -1,0 +1,117 @@
+/* Bebas Neue */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Inconsolata:wght@200..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Russo One */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Inconsolata:wght@200..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Russo One;
+}
+/* Navbar Start */
+/* Navbar End */
+
+/* Section1 image start */
+/* Varsayılan olarak yalnızca 960px'in üzerindeki resim gösterilecek */
+.section1 {
+  position: relative;
+}
+.section1 img {
+  display: none;
+}
+
+/* 960px'in üzerindeki ekranlar için Leo1.jpg'yi göster */
+@media (min-width: 960px) {
+  .section1 img:nth-child(1) {
+    display: block;
+  }
+}
+
+/* 960px ile 500px arasındaki ekranlar için leo2.jpg'yi göster */
+@media (max-width: 960px) and (min-width: 650px) {
+  .section1 img:nth-child(2) {
+    display: block;
+  }
+}
+
+/* 500px'in altındaki ekranlar için leo3.jpg'yi göster */
+@media (max-width: 650px) {
+  .section1 img:nth-child(3) {
+    display: block;
+  }
+}
+/* Section1 image End */
+
+/* Overlay Start */
+.overlay {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+.overlay h1 {
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); /* Yazıya gölge ekleme */
+}
+/* Overlay End */
+
+/* Cards Start */
+.container-card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Sayfa küçüldüğünde alt alta sıralanır*/
+  margin-top: 100px;
+  gap: 20px;
+}
+
+.card {
+  overflow: hidden; /* Resmin kart sınırlarını aşmasını engeller */
+  width: 500px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Geçiş efektini ayarlar */
+}
+
+.card:hover img {
+  transform: scale(1.2); /* Resmi büyütür */
+}
+
+/* Cards End */
+
+/* Section2 Start */
+.section2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 100px;
+}
+/* Section2 End */
+
+/* Text1 Start */
+.text1 {
+    margin-top: 100px;
+}
+.text1 h1{
+    text-align: center;
+    color: #069CCB;
+}
+/* Text1 End */
+
+/* container-products Start */
+.container-products {
+    display: flex;
+    justify-content:space-around;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+/* container-products End */
+
+/* Footer Start */
+.footer {
+    margin-top: 150px;
+}
+/* Footer End */
